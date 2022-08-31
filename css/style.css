@@ -101,34 +101,46 @@
 }
 
 
-footer {
+.footere {
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    justify-content: center;
+    align-items: center;
     background-color: #00BFA5;
     color: white;
 }
 
-footer > a{
+.footere > a{
     padding: 10px;
     margin-top: 10px;
     color: white;
     text-decoration: none;
 }
 
-footer > img {
-    margin-top: 3cm;
+.footere > img {
+    margin-top: 1.5cm;
+    height: 10em;
+    width: 10em;
 }
 
-footer > h6{
+.footere > h6{
     font-size: 40px;
     font-weight: 700;
     margin-top: 5px;
 }
 
-footer > p{
+.footere > p{
     font-size: 20px;
     font-family: montserrat;
 }
 
-.lass:hover {
+.footere > input {
+    align-items: center;
+    justify-content: center;
 
+}
+
+.lass:hover {
+    color: white !important;
 }
