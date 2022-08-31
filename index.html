@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<title>Assignment Goodbrief</title>
+	<link rel="icon" type="icon" href="images/logo-transparent.png">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="fontawesome.min.css">
+	<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #00BFA5;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.sing {
+	color: #ffffff;
+	background-color: #00BFA5;
+	padding: 5px;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+}
+
+.dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width:100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+.search {
+	width: 300px;
+	margin-left: 170px;
+	margin-right: 160px;
+	border: solid 1px #00BFA5;
+	border-radius: 8px;
+}
+
+::placeholder {
+  font-style: italic;
+}
+
+.shadow {
+	background-color: whitesmoke;
+	/*display: flex;*/
+	/*justify-content: center;*/
+	width: 50%;
+	/*justify-content: space-around;*/
+	/*justify-items: center;
+	align-items: center;*/
+}
+
+.active {
+	background-color: #00BFA5;
+}
+
+.transparent {
+	height: 35px;
+	width: 35px;
+	position: relative;
+	left: 10px;
+}
+/*.display {
+	display: flex;
+	flex-direction: row;
+	justify-items: center;
+}*/
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+	<div class="display fixed">
+	<div id="mySidenav" class="sidenav">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  <a href="#">Log in</a>
+	  <a href="#">Sign up</a>
+	  <a href="#">Guided Lessons</a>
+	  <a href="#">Learning Library</a>
+	  <!-- <a href="#">language</a> -->
+	  <button class="dropdown-btn">Languages
+    	<!-- <i class="fa-solid fa-caret-down"></i> -->
+  		</button>
+  		<div class="dropdown-container">
+    		<a href="#">Arabic</a>
+    		<a href="#">English</a>
+    		<a href="#">Swahili</a>
+    		<a href="#">Hausa</a>
+    		<a href="#">FulFulde</a>
+    		<a href="#">French</a>
+    		<a href="#">Espanol</a>
+    		<a href="#">Greek</a>
+    		<!-- <a href="#">Link 3</a>
+    		<a href="#">Link 3</a>
+    		<a href="#">Link 3</a>
+    		<a href="#">Link 3</a>
+    		<a href="#">Link 3</a> -->
+	  <a href="#">Services</a>
+	  <a href="About.html">About Team</a>
+	  <a href="#">Clients</a><br><br>
+    <a href="javascript:void(0)" class="closebtn2" onclick="closeNav()">&times;</a><br><br>
+
+	</div>
+	</div>
+	<div class="naav">
+    <span class="company fixed" style="font-size:30px;cursor:pointer;color:#00BFA5 " onclick="openNav()">&#9776;</span>
+      <span class="transparentee"><img class="transparent" src="images/logo-transparent.png"></span>
+      <span class="naave"> SuperPeek.com</span>
+      <span class="searchee"><input class="search fixed" type="text" name="search" placeholder="What do you want to learn today?"></span>
+      <span class="singee"><button class="sing fixed">Sign up</button></span>
+      <span class="singee"><button class="sing fixed">Login</button></span>
+    </div>
+	<!-- <div class="container"> -->
+	<!-- <div class="shadow fixed"> -->
+		<!-- <div class=""> -->
+			<!-- <p><span class="active"><a href="#">Learn</a></span> <span><a href="#">Career</a></span> <span><a href="#">Earn</a></span> </p> -->
+		<!-- </div> -->
+	<!-- </div> -->
+	<!-- </div> -->
+ <header class="hero">
+      <section>
+        <h1><span style="color: #00BFA5;">Super Peek-</span><br>Forget everything<br> you've heard about<br>greek learning sites.</h1>
+      </section>
+    </header>
+
+  <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light"></h1>
+        <p class="lead text-muted">We make educational videos for learning Greek. We stand out because of our ease of learning. Our target audience is adults. We want to convey a sense of eagerness, while at the same time being fresh.</p>
+        <div class="card shadow-sm">
+          <img src="images/logoo.png">
+        </div>
+        <p>
+          <a href="#" class="btn btn-primary my-2" style="border: none;">Log in</a>
+          <a href="#shop" class="btn btn-primary my-2" style="border: none;">Sign up</a>
+        </p>
+      </div>
+    </div>
+  </section>
+ 
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <video width="400px" height="300px" controls>
+						<source src="videos/vid01.mp4" type="video/mp4">
+					</video> 
+
+            <div class="card-body">
+              <p class="card-text"><b><i>STEP 1:</i> NOUNS</b> The first step in learning a language is mastering the common nouns associated to the language in consideration.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Take Exercise</button>
+                </div>
+                <small class="text-muted">uploaded 1 hour 19 mins ago</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+          <video width="400px" height="300px" controls>
+						<source src="videos/vid02.mp4" type="video/mp4">
+					</video> 
+
+            <div class="card-body">
+              <p class="card-text"><b><i>STEP 2:</i> PRO-NOUNS</b> The second step in learning a language is mastering the pronouns associated to the language in consideration.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Take Exercise</button>
+                </div>
+                <small class="text-muted">uploaded 43 mins ago</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+          <video width="400px" height="300px" controls>
+						<source src="videos/vid03.mp4" type="video/mp4">
+					</video> 
+
+            <div class="card-body">
+              <p class="card-text"><b><i>STEP 3:</i> VERBS</b> The third step in learning a language is mastering the verbs associated to the language in consideration.</p></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Take Exercise</button>
+                </div>
+                <small class="text-muted">uploaded 22 mins ago</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+           <video width="400px" height="300px" controls>
+						<source src="videos/vid04.mp4" type="video/mp4">
+					</video> 
+
+            <div class="card-body">
+              <p class="card-text"><b><i>STEP 4:</i> ADVERBS</b> The next step in learning a language is mastering the adverbs associated to the language in consideration.</p></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Take Exercise</button>
+                </div>
+                <small class="text-muted">uploaded 9 mins ago</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <video width="400px" height="300px" controls>
+						<source src="videos/vid05.mp4" type="video/mp4">
+					</video> 
+
+            <div class="card-body">
+              <p class="card-text"><b><i>STEP 5:</i> ADJECTIVES</b> The next step in learning a language is mastering the adjectives associated to the language in consideration.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Take Exercise</button>
+                </div>
+                <small class="text-muted">uploaded 7 mins ago</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <video width="400px" height="300px" controls>
+						<source src="videos/vid06.mp4" type="video/mp4">
+					</video> 
+            <div class="card-body">
+              <p class="card-text"><b><i>STEP 6:</i> ADVERBS</b> The next step in learning a language is mastering the adverbs associated to the language in consideration.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Take Exercise</button>
+                </div>
+                <small class="text-muted">uploaded 4 mins ago</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <video width="400px" height="300px" controls>
+						<source src="videos/vid07.mp4" type="video/mp4">
+					</video> 
+
+            <div class="card-body">
+              <p class="card-text"><b><i>STEP 7:</i> ADVERBS</b> The next step in learning a language is mastering the adverbs associated to the language in consideration.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Take Exercise</button>
+                </div>
+                <small class="text-muted">uploaded 2 mins ago</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <video width="400px" height="300px" controls>
+						<source src="videos/vid08.mp4" type="video/mp4">
+					</video> 
+
+            <div class="card-body">
+              <p class="card-text"><b><i>STEP 8:</i> ADVERBS</b> The next step in learning a language is mastering the adverbs associated to the language in consideration.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Take Exercise</button>
+                </div>
+                <small class="text-muted">48 secs ago</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+           <video width="400px" height="300px" controls>
+						<source src="videos/vid09.mp4" type="video/mp4">
+					</video> 
+
+            <div class="card-body">
+              <p class="card-text"><b><i>STEP 9:</i> ADVERBS</b> The next step in learning a language is mastering the adverbs associated to the language in consideration.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Take Exercise</button>
+                </div>
+                <small class="text-muted">Just now</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container px-4 py-5" id="hanging-icons">
+    <h2 class="pb-2 border-bottom">Services</h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="col d-flex align-items-start">
+        <div>
+          <h2>Learn</h2>
+          <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+          <a href="#" class="btn btn-primary" style="border: none;">
+            Learn
+          </a>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <div>
+          <h2>Get Certified</h2>
+          <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+          <a href="#" class="btn btn-primary" style="border: none;">
+            Get Certified
+          </a>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <div>
+          <h2>Earn</h2>
+          <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+          <a href="#" class="btn btn-primary" style="border: none;">
+            Earn
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- <div class="b-example-divider"></div> -->
+
+  <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+    <div class="row align-items-center g-lg-5 py-5">
+      <div class="col-lg-7 text-center text-lg-start">
+        <h1 class="display-4 fw-bold lh-1 mb-3">Contact Us</h1>
+        <p class="col-lg-10 fs-4">Learn that dream language of yours conviniently at your door step, no hidden charges.</p>
+        <small class="text-muted">Call us: <a href="+2348165494567">2348165494567</a></small><br><br>
+        <small class="text-muted">Email us: <a href="mailto:abubakar.gt.gboy.01@gmail.com">abubakar.gt.gboy.01@gmail.com</a></small>
+      </div>
+      <div class="col-md-10 mx-auto col-lg-5">
+        <form class="p-4 p-md-5 border rounded-3 bg-light">
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Email address</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInput" placeholder="Insert Your Name Here!">
+            <label for="floatingInput">Full Name</label>
+          </div>
+          <div class="form-floating mb-3">
+            <textarea class="form-control" id="floatingMessage" placeholder="Password"></textarea>
+            <label for="floatingMessage">Message</label>
+          </div>
+          <button class="w-100 btn btn-lg btn-primary" style="border: none;" type="submit">Send</button>
+          <hr class="my-4">
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="b-example-divider"></div> -->
+
+<nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#" style="font-style: italic; font-weight: 800; font-family: cursive;">Super Peek</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="About.html">About Team</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Languages</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <footer class="py-5">
+    <div class="row">
+      <div class="col-6 col-md-2 mb-3">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+          <li class="nav-item mb-2"><a href="About.html" class="nav-link p-0 text-muted">About Team</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Shop</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Services</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-2 mb-3">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+          <li class="nav-item mb-2"><a href="About.html" class="nav-link p-0 text-muted">About Team</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Shop</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Services</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-2 mb-3">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+          <li class="nav-item mb-2"><a href="About.html" class="nav-link p-0 text-muted">About Team</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Shop</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Services</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-5 offset-md-1 mb-3">
+        <form>
+          <h5>Subscribe to our newsletter</h5>
+          <p>Monthly digest of what's new and exciting from us.</p>
+          <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+            <label for="newsletter1" class="visually-hidden">Email address</label>
+            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+            <button class="btn btn-primary" style="border: none;" type="button">Subscribe</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+      <p>&copy; Super Peek, Inc. All rights reserved.</p>
+      <ul class="list-unstyled d-flex">
+        <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+        <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+        <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+      </ul>
+    </div>
+  </footer>
+</div>
+
+</main>
+    <script src="js/bootstrap.bundle.min.js"></script>
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+</body>
+</html>

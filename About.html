@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<title>Assignment Goodbrief</title>
+	<link rel="icon" type="icon" href="images/logo-transparent.png">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="fontawesome.min.css">
+	<style>
+	body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #00BFA5;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.sing {
+	color: #ffffff;
+	background-color: #00BFA5;
+	padding: 5px;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+}
+
+.singo {
+	color: #ffffff;
+	background-color: #00BFA5;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+}
+
+.dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width:100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+.search {
+	width: 300px;
+	margin-left: 170px;
+	margin-right: 160px;
+	border: solid 1px #00BFA5;
+	border-radius: 8px;
+}
+
+::placeholder {
+	font-style: italic;
+}
+
+.shadow {
+	background-color: whitesmoke;
+	/*display: flex;*/
+	/*justify-content: center;*/
+	width: 50%;
+	/*justify-content: space-around;*/
+	/*justify-items: center;
+	align-items: center;*/
+}
+
+.active {
+	background-color: #00BFA5;
+}
+
+.transparent {
+	height: 35px;
+	width: 35px;
+	position: relative;
+	left: 10px;
+}
+/*.display {
+	display: flex;
+	flex-direction: row;
+	justify-items: center;
+}*/
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+	<div class="display fixed">
+	<div id="mySidenav" class="sidenav">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  <a href="#">Log in</a>
+	  <a href="#">Sign up</a>
+	  <a href="#">Guided Lessons</a>
+	  <a href="#">Learning Library</a>
+	  <!-- <a href="#">language</a> -->
+	  <button class="dropdown-btn">Languages
+    	<!-- <i class="fa-solid fa-caret-down"></i> -->
+  		</button>
+  		<div class="dropdown-container">
+    		<a href="#">Arabic</a>
+    		<a href="#">English</a>
+    		<a href="#">Swahili</a>
+    		<a href="#">Hausa</a>
+    		<a href="#">FulFulde</a>
+    		<a href="#">French</a>
+    		<a href="#">Espanol</a>
+    		<a href="#">Greek</a>
+    		<!-- <a href="#">Link 3</a>
+    		<a href="#">Link 3</a>
+    		<a href="#">Link 3</a>
+    		<a href="#">Link 3</a>
+    		<a href="#">Link 3</a> -->
+	  <a href="#">Services</a>
+	  <a href="About.html">About Team</a>
+	  <a href="#">Clients</a>
+	  <a href="javascript:void(0)" class="closebtn2" onclick="closeNav()">&times;</a><br><br>
+	</div>
+	</div>
+	<div class="naav">
+    <span class="company fixed" style="font-size:30px;cursor:pointer;color:#00BFA5 " onclick="openNav()">&#9776;</span>
+      <span class="transparentee"><img class="transparent" src="images/logo-transparent.png"></span>
+      <span class="naave"> SuperPeek.com</span>
+      <span class="searchee"><input class="search fixed" type="text" name="search" placeholder="What do you want to learn today?"></span>
+      <span class="singee"><button class="sing fixed">Sign up</button></span>
+      <span class="singee"><button class="sing fixed">Login</button></span>
+    </div>
+	<!-- <div class="container"> -->
+	<!-- <div class="shadow fixed"> -->
+		<!-- <div class=""> -->
+			<!-- <p><span class="active"><a href="#">Learn</a></span> <span><a href="#">Career</a></span> <span><a href="#">Earn</a></span> </p> -->
+		<!-- </div> -->
+	<!-- </div> -->
+	<!-- </div> -->
+ <header class="hero">
+      <section>
+        <h1><span style="color: #00BFA5;">Super Peek-</span><br>Forget everything<br> you've heard about<br>greek learning sites.</h1>
+      </section>
+  </header>
+  <main>
+  	  <div class="container">
+    <h1 style="font-family: Georgia, 'Times New Roman', Times, serif; margin-bottom: 35px; text-align: center;">"AND ABOVE<br>EVERY<br>POSSESSOR OF<br>KNOWLEDGE,<br>THERE IS THE<br>ONE MORE<br>LEARNED"</h1>
+  <div class="row" style="margin-top: 3cm;">
+    <div class="col-md-5" >
+      <img src="images/school01.jpg" height="100%" width="100%">
+    </div>
+    <div class="col-md-7" style="font-style:italic;">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu ip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu ip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu ip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu ip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliqu ip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><a href="#"><button class="singo">READ&nbsp;&nbsp;MORE</button></a>
+    </div>
+  </div>
+  <div class="Buk">
+  	<p>"Here at Super<br>Peek,we are<br>committed to<br>addressing Global<br>developmental<br>challenges through<br>cutting-edge<br>research, knowledge<br>transfer and training<br>of high quality<br>graduates."<br><span class="abu">ABUBAKAR GHAZALI TAHIR<br>General Manager</span></p>
+  	<button class="fo"><i class="fa-light fa-circl"><br>SEE ALL TESTIMONIALS</i></button>
+  </div>
+  </main>
+  <footer>
+  	<button style=""><i></i></button><br>
+  	<img src="images/logo-transparent.png">
+  	<h6>SUPER PEEK.com</h6>
+  	<p>TO ERADICATE GLOBAL LANGUAGE BARRIER</p>
+  	<br>
+  	<p>CONTACT DETAILS</p>
+  	<hr>
+  	<input style="width: 75%; height: 3em; margin-top: 2em; border: none;" class="search fixed" type="text" name="search" placeholder="Search...">
+  	<br><a href="index.html" style="margin-bottom: 2em;">HOME</a>
+  	<br><a href="About.html" style="margin-top: 2em;">ABOUT TEAM</a>
+  	<br><a href="index.html" style="margin-top: 2em;">VISION & MISSION</a>
+  	<br><a href="index.html" style="margin-top: 2em;">CAMPUSES</a>
+  	<br><a href="index.html">GLOBAL LOCATIONS</a>
+  	<br><a href="index.html">ICT SUPPORT</a>
+  	<br><a href="index.html">CURRENT STUDENTS</a>
+  	<br><a href="index.html">CONTACT US</a>
+  	<hr>
+  	<small class="text-muted lass">COPYRIGHT @ 2022 SUPER PEEK. ALL RIGHTS RESERVED.| SITEMAP</small>
+  </footer>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+	<script>
+	function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+	function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+</body>
+</html>

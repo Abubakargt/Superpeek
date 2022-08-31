@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+*
+.hero {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    justify-items: stretch;
+    align-items: center;
+    position: relative;
+    z-index: -10;
+    top: 0px;
+    background:
+    linear-gradient(120deg, #00BFA5, rgba(0 0 0 / 7%), #00BFA5), url(../images/Teacher.jpg) no-repeat center center / cover;
+}
+
+.hero section {
+    margin-left: 150px;
+    background-color: black;
+    padding: 30px;
+    opacity: 0.8;
+    color: whitesmoke;
+    border-radius: 30px;
+
+}
+
+.btn-primary {
+    background-color: #00BFA5;
+}
+
+.navbar-dark, .bg-dark {
+    background-color: #00BFA5 ! important;
+}
+
+.nav-item: {
+    background-color: #00BFA5 ! important;
+    color: #ffffff ! important;
+}
+
+.transparentee{
+    margin-left: 14cm;
+}
+
+.naave {
+    margin-left: 5px;
+    margin-right: 1.5cm;
+}
+
+.searchee {
+ }
+
+.sidenav .closebtn2 {
+  position: absolute;
+  bottom: -5cm;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.container > h1 {
+    margin-top: 5cm;
+    /*margin-bottom: 5cm;*/
+}
+
+.Buk{
+    font-family: tangerine;
+    margin-top: 5cm;
+    background: url(../images/bckg4.jpg);
+    color: white;
+    font-size: 55px;
+    text-align: right;
+}
+
+.Buk > p{
+    margin-right: 25px;
+}
+
+.abu {
+    font-family: fraunces;
+    font-weight: 500;
+    font-size: 20px;
+    /*margin-right: 25px;*/
+}
+
+.Buk > button {
+    background: none;
+    color: white;
+    border: none;
+    margin-right: 13.5cm;
+    font-family: Montserrat;
+    font-size: 20px;
+}
+
+.fa-light {
+    color: white;
+}
+
+
+footer {
+    text-align: center;
+    background-color: #00BFA5;
+    color: white;
+}
+
+footer > a{
+    padding: 10px;
+    margin-top: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+footer > img {
+    margin-top: 3cm;
+}
+
+footer > h6{
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+footer > p{
+    font-size: 20px;
+    font-family: montserrat;
+}
+
+.lass:hover {
+
+}
