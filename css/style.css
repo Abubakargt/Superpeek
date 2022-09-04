@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
@@ -33,6 +34,17 @@
     background-color: #00BFA5;
 }
 
+.sing {
+    color: #ffffff;
+    background-color: #00BFA5;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+  font-family: fraunces;
+  font-style: italic;
+}
+
 .navbar-dark, .bg-dark {
     background-color: #00BFA5 ! important;
 }
@@ -66,6 +78,13 @@
     margin-top: 5cm;
     /*margin-bottom: 5cm;*/
 }
+
+
+.modal-header > h2 {
+  font-family: Fraunces;
+  font-style: italic;
+}
+
 
 .Buk{
     font-family: tangerine;
@@ -143,4 +162,279 @@
 
 .lass:hover {
     color: white !important;
+}
+
+.full-bleed {
+    /*box-shadow: 0 0 0 100vmax #121212;*/
+    box-shadow: url(../images/bckg4.jpg);
+    clip-path: inset(0- 100vmax);
+}
+
+/* The container must be positioned relative: */
+.custom-select {
+  position: relative;
+  font-family: fraunces;
+  font-style: italic;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element: */
+  font-family: fraunces;
+  font-style: italic;
+}
+
+.select-selected {
+  background-color: #00BFA5;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+  position: absolute;
+  background-color: #00BFA5;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.containero > label {
+    font-family: fraunces;
+}
+
+.modal-body > option {
+    font-family: fraunces;
+    font-style: italic;
+}
+
+
+
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #00BFA5;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width:100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+.search {
+    width: 300px;
+    margin-left: 170px;
+    margin-right: 160px;
+    border: solid 1px #00BFA5;
+    border-radius: 8px;
+}
+
+::placeholder {
+  font-style: italic;
+  font-family: fraunces;
+  margin-left: 5px;
+}
+
+.shadow {
+    background-color: whitesmoke;
+    /*display: flex;*/
+    /*justify-content: center;*/
+    width: 50%;
+    /*justify-content: space-around;*/
+    /*justify-items: center;
+    align-items: center;*/
+}
+
+.active {
+    background-color: #00BFA5;
+}
+
+.transparent {
+    height: 35px;
+    width: 35px;
+    position: relative;
+    left: 10px;
+}
+/*.display {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+}*/
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  text-align: center;
+  align-items: center;
+  padding: 2px 16px;
+  background-color: #00BFA5;
+  color: white;
+}
+
+.modal-body {padding: 2px 10px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #00BFA5;
+  color: white;
+}
+
+/* Full-width input fields */
+.containero input[type=text], input[type=number] {
+  width: 100%;
+  font-family: pacifico;
+  padding: 5px;
+  margin: 10px;
+  display: inline-block;
+  border: none;
+  background: #ffffff;
+}
+
+.containero label {
+  font-family: fraunces;
+  font-style: italic;
+}
+
+
+/* Add a background color when the inputs get focus */
+.containero > input[type=text]:focus, input[type=number]:focus {
+  background-color: #00BFA5;
+  outline: none;
+  font-family: Fraunces;
+  font-style: italic;
+}
+
+/* Set a style for all buttons */
+.kwanti {
+  background-color: #00BFA5;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  font-size: 18px;
+  font-family: fraunces;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.kwanti > button:hover {
+  opacity:1;
 }
